@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 7001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,7 +14,10 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.7",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.0"
+    "eslint-config-next": "11.1.0",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16"
   }
 }
