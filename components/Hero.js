@@ -61,7 +61,7 @@ export default function Hero() {
               color="#84CC16"
               multiline={true}
               padding={[0, 2]}
-              iterations={1}
+              iterations={3}
             >
               <span className="text-gray-100"> 独立开发者。</span>
             </RoughNotation>
