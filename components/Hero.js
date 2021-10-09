@@ -58,12 +58,12 @@ export default function Hero() {
             <RoughNotation
               type="highlight"
               show={true}
-              color="#FDE68A"
+              color="#84CC16"
               multiline={true}
               padding={[0, 2]}
               iterations={1}
             >
-              独立开发者。
+              <span className="text-gray-100"> 独立开发者。</span>
             </RoughNotation>
             你可以通过浏览
             <a href={userData.blogUrl} className="">
