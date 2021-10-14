@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import { ThemeProvider } from "next-themes";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
