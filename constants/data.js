@@ -41,6 +41,7 @@ const userData = {
     twitter: "https://twitter.com/caizhenghai",
     linkedin: "https://linkedin.com/in/forecho",
     github: "https://github.com/forecho",
+    telegram: "https://t.me/forecho",
   },
 };
 
