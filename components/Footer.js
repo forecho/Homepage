@@ -8,10 +8,8 @@ export default function Footer() {
         <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           <div>
-            <p>
-              © forecho. All Rights Reserved.{" "}
-              <a href="http://beian.miit.gov.cn/">鄂 ICP 备 14011839 号</a>
-            </p>
+            <p>© forecho. All Rights Reserved. </p>
+            <a href="http://beian.miit.gov.cn/">鄂 ICP 备 14011839 号</a>
           </div>
         </div>
       </div>
