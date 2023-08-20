@@ -54,7 +54,7 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-gray-700 text-lg dark:text-white mt-8">
-            我是一名软件开发工程师、开源爱好者、独立博客作者、美股价值投资者。目前正在努力成为一名
+            我是一名软件开发工程师、开源爱好者、独立博客作者、美股趋势交易者。目前正在努力成为一名
             <RoughNotation
               type="highlight"
               show={true}
