@@ -7,9 +7,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-10 md:py-20">
         <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
-          <div>
-            <p>© forecho. All Rights Reserved. </p>
-            <a href="http://beian.miit.gov.cn/">鄂 ICP 备 14011839 号</a>
+          <div className="flex flex-col items-center justify-center w-full md:flex-row md:justify-between">
+            <p className="text-sm md:text-base font-medium">© {new Date().getFullYear()} forecho. All Rights Reserved.</p>
+            <div className="mt-2 md:mt-0 text-sm text-gray-500 hidden md:block">
+              Designed with <span className="text-red-500">♥</span>
+            </div>
           </div>
         </div>
       </div>
