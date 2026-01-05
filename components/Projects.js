@@ -12,7 +12,7 @@ export default function Projects() {
             Projects
           </h2>
           <p className="text-lg md:text-2xl text-gray-500 dark:text-gray-300 font-light">
-            Some things I've built to solve my own problems.
+            Some things I&apos;ve built to solve my own problems.
           </p>
         </div>
 

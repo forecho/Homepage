@@ -14,13 +14,13 @@ const userData = {
       name: "GetYii",
       link: "https://getyii.com/",
       description: "基于 Yii2 开发的开源社区",
-      icon: "ChatAlt2Icon",
+      icon: "ChatBubbleLeftRightIcon",
     },
     {
       name: "3li3",
       link: "",
       description: "Kindle 电子书以及 iOS APP 降价提醒工具",
-      icon: "AnnotationIcon",
+      icon: "ChatBubbleBottomCenterTextIcon",
     },
     {
       name: "iDevTools",
@@ -32,7 +32,7 @@ const userData = {
       name: "CashWarden",
       link: "https://cashwarden.com/",
       description: "财务管理系统，有开源和商业版本",
-      icon: "CashIcon",
+      icon: "BanknotesIcon",
     },
   ],
 

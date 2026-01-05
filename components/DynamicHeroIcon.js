@@ -1,4 +1,4 @@
-import * as HIcons from "@heroicons/react/outline";
+import * as HIcons from "@heroicons/react/24/outline";
 
 const DynamicHeroIcon = (props) => {
   const { ...icons } = HIcons;
