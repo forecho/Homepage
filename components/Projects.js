@@ -8,16 +8,22 @@ function ProjectCard({ project }) {
   const Ic = Icons[project.icon];
   const hasLink = Boolean(project.link);
   const Tag = hasLink ? "a" : "div";
+  const hover = hasLink && h;
 
   return (
-    <Card tilt={project.tilt} interactive padding="26px" style={{ display: "block" }}>
+    <Card
+      tilt={project.tilt}
+      interactive={hasLink}
+      padding="26px"
+      style={{ display: "block", opacity: hasLink ? 1 : 0.9 }}
+    >
       <Tag
         href={hasLink ? project.link : undefined}
         target={hasLink ? "_blank" : undefined}
-        rel="noreferrer"
-        onMouseEnter={() => setH(true)}
-        onMouseLeave={() => setH(false)}
-        style={{ display: "block", color: "inherit" }}
+        rel={hasLink ? "noreferrer" : undefined}
+        onMouseEnter={hasLink ? () => setH(true) : undefined}
+        onMouseLeave={hasLink ? () => setH(false) : undefined}
+        style={{ display: "block", color: "inherit", cursor: hasLink ? "pointer" : "default" }}
       >
         <div
           style={{
@@ -33,8 +39,8 @@ function ProjectCard({ project }) {
               placeItems: "center",
               width: 50,
               height: 50,
-              color: h ? "var(--on-accent)" : "var(--accent)",
-              background: h ? "var(--accent)" : "var(--surface)",
+              color: hover ? "var(--on-accent)" : "var(--accent)",
+              background: hover ? "var(--accent)" : "var(--surface)",
               border: "var(--bw-2) solid var(--border)",
               borderRadius: "var(--wobbly-circle)",
               transition: "all var(--dur-fast) ease",
@@ -42,15 +48,31 @@ function ProjectCard({ project }) {
           >
             <Ic />
           </span>
-          <span
-            style={{
-              color: h ? "var(--accent)" : "var(--muted)",
-              transform: h ? "translate(3px,-3px)" : "none",
-              transition: "all var(--dur-fast) ease",
-            }}
-          >
-            <Icons.out />
-          </span>
+          {hasLink ? (
+            <span
+              style={{
+                color: hover ? "var(--accent)" : "var(--muted)",
+                transform: hover ? "translate(3px,-3px)" : "none",
+                transition: "all var(--dur-fast) ease",
+              }}
+            >
+              <Icons.out />
+            </span>
+          ) : (
+            <span
+              style={{
+                fontFamily: "var(--font-body)",
+                fontSize: "var(--text-sm)",
+                color: "var(--muted)",
+                border: "var(--bw-1) dashed var(--border)",
+                borderRadius: "var(--wobbly-sm)",
+                padding: "2px 10px",
+                transform: "rotate(-2deg)",
+              }}
+            >
+              已下线
+            </span>
+          )}
         </div>
         <h3
           style={{

@@ -52,7 +52,7 @@ export default function Hero() {
             <a href={userData.blogUrl} target="_blank" rel="noreferrer">
               我的博客
             </a>
-            进一步了解我，我会在那里分享我的代码、书单、生活点滴以及投资经验。
+            进一步了解我，我会在那里分享我的代码、书单、生活点滴、投资经验以及价格行为学的知识。
           </p>
           <div className="socials">
             {SOCIAL_ORDER.map((name) => (
