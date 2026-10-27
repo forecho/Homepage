@@ -77,7 +77,7 @@ const userData = {
 
   socialLinks: {
     instagram: "https://instagram.com/forecho",
-    twitter: "https://twitter.com/caizhenghai",
+    twitter: "https://x.com/forecho",
     linkedin: "https://linkedin.com/in/forecho",
     github: "https://github.com/forecho",
     telegram: "https://t.me/forecho",
